@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quinto Impacto School</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <header>
+            <h1>
+                Welcome to Quinto Impacto HighSchool
+            </h1>
+        </header>
+        <main>
+            <h2>
+                Please Log In
+            </h2>
+            
+            <form action="#" @submit.prevent="">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" v-model="userMail">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" v-model="userPassword">
+                <input type="button" @click="login" value="Login">
+            </form>
+        </main>
+        
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
